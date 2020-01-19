@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+	<style>
+		*{
+        margin: 0;
+       padding: 0;
+      font-family: "montserrat",sans-serif;
+    }
+		
+        .header{
+  height: 80px;
+  background: black;
+  padding: 0px 10px;
+  color: white;
+}
+.logo{
+  line-height: 80px;
+  float: left;
+  text-transform: uppercase;
+}
+
+.menu{
+  float: right;
+  line-height:80px;
+
+
+}
+.menu a{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+
+}
+.show-menu-btn,.hide-menu-btn{
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.show-menu-btn{
+  float: right;
+}
+.show-menu-btn i{
+  line-height: 100px;
+}
+.menu a:hover{background-color: green;}
+.hide-menu-btn:hover{
+  color:red;
+
+
+}
+
+#chk{
+  position: absolute;
+  z-index: -1111;
+}
+        
+
+        .countainer{
+			display: flex;
+			flex-wrap: wrap;
+		margin-top: 20px;
+		
+		}
+		#TEXT1{
+	 border: 1px solid red;
+	 flex-basis: 25%;
+	 padding: 4px;
+	background-color: white;
+	 background-size: cover;
+
+           
+			
+		}
+		#TEXT2{
+		border: 1x solid red;
+		flex-basis: 47.5%;
+		padding: 4px;
+		background-image: url(https://images.unsplash.com/photo-1476842634003-7dcca8f832de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+		background-size: contain;
+		
+		}
+		#TEXT3{
+	 border: 1px solid red;
+	 flex-basis: 25%;
+	 padding: 4px;
+	  background-color: white;
+
+        }
+        footer{
+        	background-color: black;
+        	height: 50px;
+        	border:2px solid white;
+        }
+
+        @media(max-width:900px){
+
+        	{
+        	}
+         #TEXT2{
+         	flex-basis: 100%;
+
+         
+
+         }	
+         #TEXT1{
+         	flex-basis: 47.75%;
+         	order: 2
+         }
+         #TEXT3{
+         	flex-basis: 48%;
+         	order:3;
+
+         }
+         .show-menu-btn,.hide-menu-btn{
+           display: block;
+  }
+  .menu{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    
+  }
+  .menu a{
+    display: block;
+    padding: 20px;
+  }
+  .hide-menu-btn{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #chk:checked ~ .menu{
+    right:0;
+
+        }
+
+
+
+         .nav .fa-home{
+        	color: white;
+            font-size: 25px;
+        }
+        .fa-users{
+        	font-size: 25px;
+        }
+        .fa-image{
+        	font-size: 25px;
+        	color: white;
+        }
+        .fa-address-book{
+        	font-size: 25px;
+        }
+        .fa-twitter{
+        	font-size: 24px;
+        	margin-right: 8px;
+        }
+
+       
+
+
+	</style>
+	<title></title>
+	
+
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+</head>
+<body>
+	<div>
+<img style="width: 100%; height: 400px;" src="https://www.exodustravels.com/sites/exod/files/styles/exo_1600_566/public/node/trip/images/43791.jpg?t=1HzdJI&itok=IHBIYziq&timestamp=1489083950">
+</div>
+ <div class="header">
+    <h2 class="logo">Jungle</h2>
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-menu-btn">
+      <i class="fas fa-ellipsis-h"></i>
+    </label>
+
+    <ul class="menu">
+    <a href="#"><i style="margin-right: 5px" class="fa fa-home"></i>Home</a>
+			<a href="#"><i style="margin-right: 5px" class="fa fa-users"></i>About Us</a>
+			<a href="#"><i style="margin-right: 5px" class="fa fa-image"></i>Gallery</a>
+			<a href="#"><i style="margin-right: 5px" class="fa fa-address-book"></i>Contact </a>
+      <label for="chk" class="hide-menu-btn">
+        <i class="fas fa-times"></i>
+      </label>
+    </ul>
+  </div>
+ 
+
+
+
+        <div class="countainer">
+<aside id="TEXT1">
+	<p style="text-align:left; ">Some threats that face the jungle<br>
+	<b>1. Commercial Fishing:</b><br>
+Fish are the main source of food and income for many Amazonian people. The amount of fish needed to feed a growing population, however, may lead to over-fishing, especially if large industries are harvesting fish in order to export to foreign markets. In many parts of the Amazon, large, industrial trawlers armed with gill nets scoop up entire schools of fish in an entirely unsustainable atempt to bring food to market.<br>
+
+<b>Fact:</b> Up to 60% of their catch is lost to spoilage.<br>
+
+</p>
+</aside>
+
+<div id="TEXT2">
+	<p style="color: white;"> Rhett Butler founded Mongabay in 1999 with the mission of raising interest in and appreciation of wild lands and wildlife. For the first ten years of the project, he operated Mongabay on his own, publishing thousands of stories and tens of thousands of photos.<br>
+
+Today Rhett Butler serves as editor-in-chief and CEO of Mongabay, a non-profit media organization with more than three dozen staff across four bureaus (Global, Indonesia, Latin America, and India) and a network of around 250 correspondents in 50 countries who pursue stories ranging from conventional news articles to deeply-reported investigative projects.<br>
+
+Beyond Mongabay, Rhett Butler runs WildMadagascar.org, a site that highlights the spectacular cultural and biological richness of Madagascar and reports on environmental news for the Indian Ocean island nation.
+.</p>
+</div>
+
+<aside id="TEXT3">
+	<p style="text-align:left;">Some steps for saving rainforests and, on a broader scale, ecosystems around the world can be abbreviated as TREES:<br>
+
+<b>1-</b>Teach others about the importance of the environment and how they can help save rainforests.<br>
+<b>2-</b>Restore damaged ecosystems by planting trees on land where forests have been cut down.<br>
+<b>3-</b>Encourage people to live in a way that doesn't hurt the environment<br>
+<b>4-</b>Establish parks to protect rainforests and wildlife<br>
+<b>5</b>-Support companies that operate in ways that minimize damage to the environment<br></p>
+</aside>
+      </div>
+
+      <footer>
+      	<p style="text-align: center; color: white;">all copy right are reseved</p> 
+      </footer>
+       
+</body>
+</html>
